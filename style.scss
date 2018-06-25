@@ -1,0 +1,121 @@
+@import "compass";
+// colors
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+// extend用
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  color: $fontColor;
+  font-size: 1.4rem;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+}
+
+#top {
+    .img{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+section {
+    @include flex-direction(column);
+    @include display-flex;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+    width: 90%;
+    @extend .block-center;
+    
+    h2 {
+    color: red;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 3.2rem;
+    }
+}
+
+#middle {
+    
+    .container {
+        @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(column);
+    }
+}
+    .cat {
+        @include flex(1);
+        margin: 10px 0;
+        background-color: $subColor;
+        @include box-sizing(border-box);
+        text-align: center;
+        padding: 20px;
+    h3 {
+        background-color: #ffff00;
+    }
+}
+
+
+footer {
+    margin-top: 5%;
+    background-color: #bea300;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    
+    .small {
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    }
+}
+
+
+#btn {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    @include border-radius(4px);
+    font-size: 1.5rem;
+}
+
+// DeskTopサイズ
+@media (min-width: 769px) {
+#top {
+     .img {
+            width: 100%;
+            height: 500px;
+        }
+    }
+    
+#middle {
+    
+    .container {
+    @include flex-direction(row);
+    justify-content: space-between;
+    }
+    .cat {
+        margin: 0 10px;
+    }
+}
+
+#btn {
+    width: 30%;
+    }
+
+}
