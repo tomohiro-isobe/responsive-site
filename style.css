@@ -13,9 +13,12 @@ body {
   letter-spacing: 0.1em;
   background-color: #fdfcf6; }
 
-#top .img {
+#TopImage {
+  background-image: url(images/TSURU170211-019_TP_V.jpg);
   width: 100%;
-  height: 250px; }
+  height: 250px;
+  background-size: cover;
+  background-position: center center; }
 
 section {
   -webkit-flex-direction: column;
@@ -74,9 +77,12 @@ footer {
   font-size: 1.5rem; }
 
 @media (min-width: 769px) {
-  #top .img {
+  #TopImage {
+    background-image: url(images/TSURU170211-019_TP_V.jpg);
     width: 100%;
-    height: 500px; }
+    height: 500px;
+    background-size: cover;
+    background-position: center center; }
 
   #middle .container {
     -webkit-flex-direction: row;

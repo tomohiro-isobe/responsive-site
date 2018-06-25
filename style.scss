@@ -24,11 +24,12 @@ body {
   background-color: $baseColor;
 }
 
-#top {
-    .img{
-        width: 100%;
-        height: 250px;
-    }
+#TopImage {
+    background-image: url(images/TSURU170211-019_TP_V.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
 }
 
 
@@ -96,12 +97,13 @@ footer {
 
 // DeskTopサイズ
 @media (min-width: 769px) {
-#top {
-     .img {
-            width: 100%;
-            height: 500px;
-        }
-    }
+#TopImage {
+    background-image: url(images/TSURU170211-019_TP_V.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
     
 #middle {
     
